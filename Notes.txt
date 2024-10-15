@@ -1,0 +1,48 @@
+installing the typescript
+
+npm install -g typescript
+
+Command For using typescript extension
+
+ npm i -g ts-node
+
+
+Opening Command Pallet
+
+press F1
+
+
+Code Runner configurations
+
+Open Command Pallet -> Select Preference : Open Keyboard Shortcut -> Select Code Runner -> Change the setting to Shift+Enter
+
+
+How to compile the TS code without Code Runner Extension
+
+Step 1 - Open Main Folder in PowerShell
+Step 2 - Write cmd tsc -init
+Step 3 - Open the powerShell , write tsc .\file.path
+Step 4 - Change the version of the target property in ts.config to ES6 
+Step 5 - Additional step , if you dont want to comile every ts file in you folder
+you can add "files" property in ts.config and include the ts file you  want to compile .
+Syntax - "files": ["arrays.ts"]
+
+Step 6 - You can use "include" property , with which you can specify a folder path , ts files of which you wanted to be compiled . Syntax - ["include"] : ["src/**/*"]
+
+Step 7 - Similarly you can also use "exclude" property to specify the ts files you don't want to be converted to . Syntax - "exclude" : ["src/gg.ts" , "src/tt.ts"] 
+
+Step 8 - Now if you want your compiled JS file to go to a separate folder . We need to uncomment the "outDir" property in config file and specify the folder we need our JS compiled files to go to . Syntax - "outDir": "./dist",    
+
+
+
+
+TypeScript is a syntactic superset of Java Script which adds "static " typing
+
+This basically means that TS adds syntax on top of JavaScript , allowing developers to add types
+
+A common way to use TypeScript is to use the official TypeScript compiler, which transpiles TypeScript code into JavaScript.
+
+TS is transpiled into JS using a complier
+
+TS converted into JS means it runs anywhere that JS runs
+
